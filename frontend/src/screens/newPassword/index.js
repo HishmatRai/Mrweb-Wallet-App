@@ -1,14 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import {
-  View,
-  Text,
-  StatusBar,
-  TouchableOpacity,
-  StyleSheet,
-  SafeAreaView,
-} from "react-native";
+import { View, Text, StyleSheet, SafeAreaView } from "react-native";
 import ReactNativePinView from "react-native-pin-view";
-import { Ionicons } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 import colors from "../../../../colors";
@@ -23,9 +15,9 @@ function NewPassword(props) {
     } else {
       setShowRemoveButton(false);
     }
-    if (enteredPin.length === 4) {
+    if (enteredPin.length === 6) {
       setShowCompletedButton(true);
-      //   props.navigation.navigate("CreatePinConfirm");
+      props.navigation.navigate("RecoveryConfirm");
     } else {
       setShowCompletedButton(false);
     }

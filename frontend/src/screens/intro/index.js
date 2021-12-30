@@ -60,7 +60,11 @@ function Intro(props) {
         style={styles.nextBtn}
       >
         <View>
-          <Text style={styles._next_btn_text}>CREATE A NEW WALLET</Text>
+          <TouchableOpacity
+            onPress={() => props.navigation.navigate("NewPassword")}
+          >
+            <Text style={styles._next_btn_text}>CREATE A NEW WALLET</Text>
+          </TouchableOpacity>
         </View>
       </LinearGradient>
     );
@@ -75,7 +79,7 @@ function Intro(props) {
         style={styles.buttonCircle}
       >
         <TouchableOpacity
-        onPress={() => props.navigation.navigate("NewPassword")}
+          onPress={() => props.navigation.navigate("NewPassword")}
         >
           <Text style={styles.textDone}>CREATE A NEW WALLET</Text>
         </TouchableOpacity>

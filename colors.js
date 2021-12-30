@@ -3,5 +3,8 @@ export default {
     activeDotColor: '#F6C04C',
     dotColor:"#C4C4C4",
     white:"#fff",
-    passwordColor:"#FFBA25"
+    passwordColor:"#FFBA25",
+    continueButtonBg:"#5ADCB9",
+    gray:"#C4C4C4",
+    black:"#000"
   };
