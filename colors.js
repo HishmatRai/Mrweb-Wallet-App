@@ -6,5 +6,6 @@ export default {
     passwordColor:"#FFBA25",
     continueButtonBg:"#5ADCB9",
     gray:"#C4C4C4",
-    black:"#000"
+    black:"#000",
+    blue:"#6C63FF"
   };

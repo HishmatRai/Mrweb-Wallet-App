@@ -25,6 +25,8 @@ import Wallet from "../screens/wallet";
 import Discover from "../screens/discover";
 import Dapps from "../screens/dapps";
 import Settings from "../screens/settings";
+import BuyBitcoin from "../screens/buyBitcoin";
+import Profile from "../screens/profile";
 
 function TabNavigation() {
   return (
@@ -109,7 +111,7 @@ function Navigaion() {
           component={RecoveryConfirm}
           options={{ headerShown: false }}
         /> */}
-        <Stack.Screen
+        {/* <Stack.Screen
           name="Recovery"
           component={Recovery}
           options={{ headerShown: false }}
@@ -118,10 +120,20 @@ function Navigaion() {
           name="RecoveryVerify"
           component={RecoveryVerify}
           options={{ headerShown: false }}
-        />
-        <Stack.Screen
+        /> */}
+        {/* <Stack.Screen
           name="TabNavigation"
           component={TabNavigation}
+          options={{ headerShown: false }}
+        /> */}
+          {/* <Stack.Screen
+          name="BuyBitcoin"
+          component={BuyBitcoin}
+          options={{ headerShown: false }}
+        /> */}
+         <Stack.Screen
+          name="Profile"
+          component={Profile}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
