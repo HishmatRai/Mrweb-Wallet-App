@@ -43,6 +43,10 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "android": {
+      "package": "com.Mrweb.Mrweb",
+      "versionCode": 1
     }
   }
 }

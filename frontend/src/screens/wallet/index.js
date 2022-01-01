@@ -39,25 +39,37 @@ let Wallet = (props) => {
 
       <View style={styles._header_btn_main}>
         <View style={styles.__btn_main}>
-          <TouchableOpacity style={styles._send_btn}>
+          <TouchableOpacity
+            style={styles._send_btn}
+            onPress={() => props.navigation.navigate("Send")}
+          >
             <SendIcon width={33} height={31} fill={colors.primary} />
           </TouchableOpacity>
           <Text style={styles._send_btn_text}>Send</Text>
         </View>
         <View style={styles.__btn_main}>
-          <TouchableOpacity style={styles._send_btn}>
+          <TouchableOpacity
+            style={styles._send_btn}
+            onPress={() => props.navigation.navigate("QrCode")}
+          >
             <ReceiveIcon width={33} height={31} fill={colors.primary} />
           </TouchableOpacity>
           <Text style={styles._send_btn_text}>Receive</Text>
         </View>
         <View style={styles.__btn_main}>
-          <TouchableOpacity style={styles._send_btn}>
+          <TouchableOpacity
+            style={styles._send_btn}
+            onPress={() => props.navigation.navigate("BuyBitcoin")}
+          >
             <BuyIcon width={33} height={31} fill={colors.primary} />
           </TouchableOpacity>
           <Text style={styles._send_btn_text}>Buy</Text>
         </View>
         <View style={styles.__btn_main}>
-          <TouchableOpacity style={styles._send_btn}>
+          <TouchableOpacity
+            style={styles._send_btn}
+            onPress={() => props.navigation.navigate("Swap")}
+          >
             <SwapIcon width={33} height={31} fill={colors.primary} />
           </TouchableOpacity>
           <Text style={styles._send_btn_text}>Swap</Text>

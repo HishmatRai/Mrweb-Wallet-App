@@ -3,7 +3,7 @@ import { View, StyleSheet, SafeAreaView } from "react-native";
 import colors from "./../../../../colors";
 import Card from "./../../../assets/images/Card.svg";
 import Button from "./../../components/button";
-let BuyBitcoin = () => {
+let BuyBitcoin = (props) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles._data_main}>
@@ -14,7 +14,7 @@ let BuyBitcoin = () => {
             ButtonBgColor="#6CBBF2"
             ButtonRadious={50}
             ButtonText="BUY BITCOIN"
-            // onPress={() => props.navigation.navigate("RecoveryVerify")}
+            onPress={() => props.navigation.navigate("Profile")}
           />
         </View>
       </View>

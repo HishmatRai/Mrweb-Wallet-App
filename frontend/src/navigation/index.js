@@ -27,6 +27,11 @@ import Dapps from "../screens/dapps";
 import Settings from "../screens/settings";
 import BuyBitcoin from "../screens/buyBitcoin";
 import Profile from "../screens/profile";
+import Swap from "../screens/Swap";
+import Transfer from "../screens/Transfer";
+import Complete from "../screens/complete";
+import QrCode from "../screens/qr";
+import Send from "../screens/send";
 
 function TabNavigation() {
   return (
@@ -96,7 +101,7 @@ function Navigaion() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        {/* <Stack.Screen
+        <Stack.Screen
           name="Intro"
           component={Intro}
           options={{ headerShown: false }}
@@ -105,13 +110,13 @@ function Navigaion() {
           name="NewPassword"
           component={NewPassword}
           options={{ headerShown: false }}
-        /> */}
-        {/* <Stack.Screen
+        />
+        <Stack.Screen
           name="RecoveryConfirm"
           component={RecoveryConfirm}
           options={{ headerShown: false }}
-        /> */}
-        {/* <Stack.Screen
+        />
+        <Stack.Screen
           name="Recovery"
           component={Recovery}
           options={{ headerShown: false }}
@@ -120,20 +125,45 @@ function Navigaion() {
           name="RecoveryVerify"
           component={RecoveryVerify}
           options={{ headerShown: false }}
-        /> */}
-        {/* <Stack.Screen
+        />
+        <Stack.Screen
           name="TabNavigation"
           component={TabNavigation}
           options={{ headerShown: false }}
-        /> */}
-          {/* <Stack.Screen
+        />
+          <Stack.Screen
           name="BuyBitcoin"
           component={BuyBitcoin}
           options={{ headerShown: false }}
-        /> */}
+        />
          <Stack.Screen
           name="Profile"
           component={Profile}
+          options={{ headerShown: false }}
+        />
+          <Stack.Screen
+          name="Swap"
+          component={Swap}
+          options={{ headerShown: false }}
+        />
+          <Stack.Screen
+          name="Transfer"
+          component={Transfer}
+          options={{ headerShown: false }}
+        />
+         <Stack.Screen
+          name="Complete"
+          component={Complete}
+          options={{ headerShown: false }}
+        />
+         <Stack.Screen
+          name="QrCode"
+          component={QrCode}
+          options={{ headerShown: false }}
+        />
+         <Stack.Screen
+          name="Send"
+          component={Send}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
