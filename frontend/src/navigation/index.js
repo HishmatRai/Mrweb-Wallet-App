@@ -32,6 +32,8 @@ import Transfer from "../screens/Transfer";
 import Complete from "../screens/complete";
 import QrCode from "../screens/qr";
 import Send from "../screens/send";
+import SendReceive from "../screens/sendReceive";
+import Token from "../screens/token";
 
 function TabNavigation() {
   return (
@@ -164,6 +166,16 @@ function Navigaion() {
          <Stack.Screen
           name="Send"
           component={Send}
+          options={{ headerShown: false }}
+        /> 
+         <Stack.Screen
+          name="SendReceive"
+          component={SendReceive}
+          options={{ headerShown: false }}
+        />
+         <Stack.Screen
+          name="Token"
+          component={Token}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

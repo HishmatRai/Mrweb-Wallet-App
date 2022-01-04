@@ -41,7 +41,7 @@ let Wallet = (props) => {
         <View style={styles.__btn_main}>
           <TouchableOpacity
             style={styles._send_btn}
-            onPress={() => props.navigation.navigate("Send")}
+            onPress={() => props.navigation.navigate("SendReceive")}
           >
             <SendIcon width={33} height={31} fill={colors.primary} />
           </TouchableOpacity>
@@ -50,7 +50,7 @@ let Wallet = (props) => {
         <View style={styles.__btn_main}>
           <TouchableOpacity
             style={styles._send_btn}
-            onPress={() => props.navigation.navigate("QrCode")}
+            onPress={() => props.navigation.navigate("SendReceive")}
           >
             <ReceiveIcon width={33} height={31} fill={colors.primary} />
           </TouchableOpacity>

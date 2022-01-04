@@ -42,7 +42,7 @@ let QrCodeS = (props) => {
           <Ionicons name="arrow-back" size={24} color={colors.white} />
         </TouchableOpacity>
         <Text style={styles._heading}>Receive AMA</Text>
-        <TouchableOpacity>
+        <TouchableOpacity  onPress={() => props.navigation.navigate("TabNavigation")}>
           <Text style={styles._done}>Done</Text>
         </TouchableOpacity>
       </View>

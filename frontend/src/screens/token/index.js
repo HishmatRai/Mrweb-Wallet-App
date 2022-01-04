@@ -7,9 +7,9 @@ import {
   TouchableOpacity,
 } from "react-native";
 import colors from "./../../../../colors";
-import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
+import { Ionicons, MaterialCommunityIcons,Entypo } from "@expo/vector-icons";
 import Button from "./../../components/button";
-let Send = (props) => {
+let Token = (props) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles._header_main}>
@@ -19,13 +19,20 @@ let Send = (props) => {
         >
           <Ionicons name="arrow-back" size={24} color={colors.white} />
         </TouchableOpacity>
-        <Text style={styles._heading}>Send AMA (TRC30)</Text>
-        <TouchableOpacity   onPress={() => props.navigation.navigate("Token")}>
-          <Text style={styles._done}>Next</Text>
+        <Text style={styles._heading}>Add Custom Token</Text>
+        <TouchableOpacity onPress={() => props.navigation.navigate("TabNavigation")}>
+          <Text style={styles._done}>Save</Text>
         </TouchableOpacity>
       </View>
+      <TouchableOpacity style={styles._card_main}>
+        <Text style={styles._card_heading}>Network</Text>
+        <View style={styles._paste_main}>
+          <Text style={styles._paste}>Ethereum</Text>
+          <Entypo name="chevron-right" size={24}   color={colors.blue} />
+        </View>
+      </TouchableOpacity>
       <View style={styles._card_main}>
-        <Text style={styles._card_heading}>Recipient Address</Text>
+        <Text style={styles._card_heading}>Contract Address</Text>
         <View style={styles._paste_main}>
           <Text style={styles._paste}>Paste</Text>
           <MaterialCommunityIcons
@@ -36,18 +43,20 @@ let Send = (props) => {
         </View>
       </View>
       <View style={styles._card_main}>
-        <Text style={styles._card_heading}>AMA</Text>
-        <View style={styles._paste_main}>
-          <Text style={styles._paste}>Max</Text>
-          <Text style={styles._paste2}>AMA</Text>
-        </View>
+        <Text style={styles._card_heading}>Name</Text>
+      </View>
+      <View style={styles._card_main}>
+        <Text style={styles._card_heading}>Symbol</Text>
+      </View>
+      <View style={styles._card_main}>
+        <Text style={styles._card_heading}>Decimals</Text>
       </View>
       <View style={styles._btn_main}>
         <Button
           ButtonBgColor="#6CBBF2"
           ButtonRadious={50}
-          ButtonText="Next"
-          onPress={() => props.navigation.navigate("Token")}
+          ButtonText="Save"
+          onPress={() => props.navigation.navigate("TabNavigation")}
         />
       </View>
     </SafeAreaView>
@@ -116,4 +125,4 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
   },
 });
-export default Send;
+export default Token;
